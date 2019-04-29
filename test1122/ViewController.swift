@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: UIButton) {
-        lv_name.text = "AAAA"
+        lv_name.text = "BBBBBB"
         
     }
     
