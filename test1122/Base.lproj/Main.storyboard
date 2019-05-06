@@ -19,22 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3c-wt-5ka">
-                                <rect key="frame" x="98" y="62" width="193" height="48"/>
+                                <rect key="frame" x="99" y="95" width="193" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-1e-7Z9">
-                                <rect key="frame" x="47" y="134" width="294" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxa-O5-zIy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzD-KV-UJK">
                                 <rect key="frame" x="180" y="467" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,6 +51,16 @@
                                 <rect key="frame" x="62" y="215" width="290" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-1e-7Z9">
+                                <rect key="frame" x="48" y="161" width="294" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxa-O5-zIy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,14 +93,39 @@
             </objects>
             <point key="canvasLocation" x="1968.1159420289857" y="453.34821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--My Browser View Controller-->
         <scene sceneID="kyn-cp-yJg">
             <objects>
-                <viewController id="bi8-8j-EJ8" sceneMemberID="viewController">
+                <viewController id="bi8-8j-EJ8" customClass="MyBrowserViewController" customModule="test1122" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udg-Xd-Bip">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yD-eE-gTx">
+                                <rect key="frame" x="315" y="782" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NIm-TE-42y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2Y-jj-fJp">
+                                <rect key="frame" x="20" y="782" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OxK-5Z-vLl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.664010831240057" blue="0.11148472176303503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1yD-eE-gTx" firstAttribute="centerY" secondItem="n2Y-jj-fJp" secondAttribute="centerY" id="6Zc-T8-yB3"/>
+                            <constraint firstItem="B4Q-K6-Y2u" firstAttribute="bottom" secondItem="1yD-eE-gTx" secondAttribute="bottom" constant="50" id="71Q-Dm-7wH"/>
+                            <constraint firstItem="B4Q-K6-Y2u" firstAttribute="trailing" secondItem="1yD-eE-gTx" secondAttribute="trailing" constant="53" id="onj-Lu-qnL"/>
+                            <constraint firstItem="n2Y-jj-fJp" firstAttribute="leading" secondItem="B4Q-K6-Y2u" secondAttribute="leading" constant="20" id="v2n-8X-OA5"/>
+                            <constraint firstItem="1yD-eE-gTx" firstAttribute="leading" secondItem="n2Y-jj-fJp" secondAttribute="trailing" constant="10" id="zkR-du-pvf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B4Q-K6-Y2u"/>
                     </view>
                 </viewController>
