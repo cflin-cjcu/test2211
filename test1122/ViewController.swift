@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewA: UIButton!
     @IBOutlet weak var viewB: UIButton!
     @IBOutlet weak var btnalert: UIButton!
+    @IBOutlet weak var tablebtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
